@@ -14,7 +14,7 @@ is a web app that predicts student performance using machine learning (SVM). Use
 ## Installation:
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/bhxvshh/GradeGuard.git
+   git clone https://github.com/bhxvxshh/GradeGuard.git
    cd GradeGuard
 Install the required dependencies:
 
