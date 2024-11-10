@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student predictor </title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <button class="gmail-button" id="gmail" title="gmail">
+            <i class="fa-solid fa-envelope"></i> <!-- or use an appropriate Gmail icon -->
+        </button>
+        <button style="margin-left: 900px;" class="account-button" id="account" title="Account">
+            <i class="fa-solid fa-user"></i>
+        </button>
+    </div>
+    <h1 style="justify-content: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; position: relative; margin-top: 40px; display: block;margin-left: 300px;">Welcome to Grade guard!</h1>
+    <div class = "instruction">
+        <h1>The instruction to be followed </h1>
+        <h2></h2>
+        <ol>
+            <li>Click on the "report" to get detailed performance of the student </li>
+            <li>Click on the "enter" to determine a student's current academics performance level  </li>
+            <li>Click on analysis to get a feedback from our grade guard </li>
+            <p>further more detailed can be sent through user's mail</p>
+        </ol>
+    </div>
+    
+    <div class="main-content">
+        <div class="student-report">
+            <form action="/report" method="GET">
+            <button class="report" type="submit">Report</button>
+        </form>
+        </div>
+        <div>
+            <button class = "input-model">Enter  </button>
+        </div>
+        <div>
+            <!-- Link to the /analyze route -->
+            <form action="/analyze" method="GET">
+                <button class="get-predict" type="submit">Analysis</button>
+            </form>
+        </div>
+    </div>
+  
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

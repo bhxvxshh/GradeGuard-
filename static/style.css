@@ -1,0 +1,47 @@
+html{
+    margin: auto;
+}
+.instruction{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 1.5rem;
+ color: gray;
+ background-color: aliceblue;
+ box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+ width: auto;
+ max-width: 900px;
+ padding: 20px 30px;
+ margin-top: 200px;
+}
+.instruction h1{
+    font-size:20px;
+}
+button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: azure;
+    background-color: black;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+}
+.fa-envelope{
+    font-size: 2rem;
+    color: azure;
+}
+.main-content{
+    margin: 300px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between buttons */
+    margin-top: 50px; /* Space after instruction div */
+
+}
+.report,
+.input-model,
+.get-predict {
+    margin: 0;
+}

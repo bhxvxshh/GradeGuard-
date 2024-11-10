@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .grade {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .grade strong {
+            color: #e74c3c;
+        }
+        .average {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .average p {
+            margin: 8px 0;
+            font-size: 1.1em;
+            color: #16a085;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Latest Report</h1>
+        <div class="grade"><strong>English Grade:</strong> {{ latest_grades.english }}</div>
+        <div class="grade"><strong>Math Grade:</strong> {{ latest_grades.math }}</div>
+        <div class="grade"><strong>Sciences Grade:</strong> {{ latest_grades.sciences }}</div>
+        <div class="grade"><strong>Language Grade:</strong> {{ latest_grades.language }}</div>
+        <div class="grade"><strong>Performance:</strong> {{ latest_grades.performance }}</div>
+
+        <h2>Average of All Grades Submitted</h2>
+        <div class="average">
+            <p><strong>English:</strong> {{ average_grades.english }}</p>
+            <p><strong>Math:</strong> {{ average_grades.math }}</p>
+            <p><strong>Sciences:</strong> {{ average_grades.sciences }}</p>
+            <p><strong>Language:</strong> {{ average_grades.language }}</p>
+        </div>
+    </div>
+</body>
+</html>

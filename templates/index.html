@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+</head>
+<body>
+    <h1>Enter Your Grades</h1>
+    <form method="POST">
+        <label for="english_grade">English Grade:</label>
+        <input type="number" name="english_grade" required><br>
+
+        <label for="math_grade">Math Grade:</label>
+        <input type="number" name="math_grade" required><br>
+
+        <label for="sciences_grade">Sciences Grade:</label>
+        <input type="number" name="sciences_grade" required><br>
+
+        <label for="language_grade">Language Grade:</label>
+        <input type="number" name="language_grade" required><br>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" name="nationality" required><br>
+
+        <label for="city">City:</label>
+        <input type="text" name="city" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" required><br>
+
+        <label for="ethnic_group">Ethnic Group:</label>
+        <input type="text" name="ethnic_group" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if performance %}
+        <h2>{{ performance }}</h2>
+    {% endif %}
+    {% if error %}
+        <h2 style="color: red;">{{ error }}</h2>
+    {% endif %}
+</body>
+</html>
